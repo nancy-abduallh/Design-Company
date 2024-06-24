@@ -1,0 +1,99 @@
+body.dark-mode {
+    background-color: #343a40;
+    color: white;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaa6a6;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: black;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.sticky-nav {
+    position: sticky;
+    /* margin-top:50px; */
+    top: 50px; 
+    width: 200px;
+    height:max-content;
+}
+
+.custom-opacity {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+.custom-opacity:hover {
+    opacity: 1;
+}
+
+.simple_footer {
+    background-color: #DC3545;
+    padding: 20px 0;
+    font-size: 28px;
+}
+.simple_footer p {
+    margin: 0;
+    float: right;
+}
+
+.navbar .nav-link {
+    color: black !important;
+    font-size: 1.25em;
+}
+.navbar .nav-link:hover {
+    color: #f8f9fa !important;
+}
+.navbar .dropdown-menu {
+    background-color: #dc3545; 
+}
+.navbar .dropdown-item {
+    color: black;
+}
+.navbar .dropdown-item:hover {
+    background-color: #c82333;
+}
+.navbar-brand,
+.title{
+    font-size: 30px !important;
+    font-family: "Dancing Script", cursive !important;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+
+.sidebar .nav-link:hover{
+    background-color: bisque;
+   color: black !important;
+}
