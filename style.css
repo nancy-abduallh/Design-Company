@@ -97,3 +97,63 @@ input:checked + .slider:before {
     background-color: bisque;
    color: black !important;
 }
+@media (max-width: 768px) {
+    .switch {
+        width: 50px;
+        height: 28px;
+    }
+    .slider:before {
+        height: 22px;
+        width: 22px;
+        transform: translateX(22px);
+    }
+    
+    .sticky-nav {
+        width: 150px;
+        top: 40px;
+    }
+    
+    .simple_footer {
+        padding: 15px 0;
+        font-size: 22px;
+    }
+    
+    .navbar .nav-link {
+        font-size: 1em;
+    }
+    .navbar-brand,
+    .title {
+        font-size: 24px !important;
+    }
+}
+
+/* For screens smaller than 576px (Small Mobile Phones) */
+@media (max-width: 576px) {
+    .switch {
+        width: 40px;
+        height: 22px;
+    }
+    .slider:before {
+        height: 16px;
+        width: 16px;
+        transform: translateX(18px);
+    }
+    
+    .sticky-nav {
+        width: 100px;
+        top: 30px;
+    }
+    
+    .simple_footer {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    
+    .navbar .nav-link {
+        font-size: 0.875em;
+    }
+    .navbar-brand,
+    .title {
+        font-size: 20px !important;
+    }
+}
